@@ -27,12 +27,13 @@ function myFunction4() {
 
 document.querySelector(".btn").addEventListener("click", function (e) {
   e.preventDefault();
+  //   document.querySelector(".form0").classList.remove("active");
+  //   document.querySelector(".form1").classList.add("active");
 
-  //on masque la div precedente
-  document.querySelector(".form0").classList.remove("active");
-
-  //On reactive le div voulu
+  let rec = document.querySelector(".bt");
+  rec.style.display = "none";
   document.querySelector(".form1").classList.add("active");
+
 });
 
 
