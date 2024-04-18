@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="one"></div>
+        <div class="two">
+          <div class="form0 active">
+            <form action="">
+              <div class="item">
+                <label for="name" class="">CARDHOLDER NAME</label>
+                <input
+                  type="text"
+                  class=""
+                  id="myInputName"
+                  placeholder="e.g.Jane Appleseed"
+                  oninput="myFunction()"
+                />
+              </div>
+              <div class="item">
+                <label for="Number" class="">CARD NUMBER</label>
+                <input
+                  type="number"
+                  class=""
+                  id="Number"
+                  placeholder="e.g. 1234 5678 9123 0000"
+                  oninput="myFunction1()"
+                />
+                <div id="numberHelp" class="form-text"></div>
+              </div>
+              <div class="cont">
+                <div class="items1">
+                  <label for="">EXP.DATE(MM/YY)</label>
+                  <div class="date">
+                    <div class="day">
+                      <input
+                        type="number"
+                        placeholder="MM"
+                        id="inputdate"
+                        oninput="myFunction2()"
+                      />
+                    </div>
+                    <div class="year">
+                      <input
+                        type="number"
+                        placeholder="YY"
+                        id="inputyear"
+                        oninput="myFunction3()"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="item" id="cv">
+                  <label for="">cvc</label>
+                  <input
+                    type="text"
+                    placeholder="e.g.123"
+                    id="inputcvc"
+                    oninput="myFunction4()"
+                  />
+                </div>
+              </div>
+              <div class="item">
+                <p id="demo"></p>
+
+                <input type="submit" value="Confirm" class="btn" />
+              </div>
+            </form>
+          </div>
+          <div class="form1 inactive">
+          <div class="img">
+            <img src="image/icon-complete.svg" alt="" />
+          </div>
+          <div class="para">
+            <h4>THANK YOU !</h4>
+            <p>We've added your card details</p>
+          </div>
+        </div>
+        </div>
+        
+      </div>
+
+      <div class="carte">
+        <div class="card1">
+          <div class="img-card1">
+            <form class="">
+              <div class="inputnumber">
+                <p class="recupnumber"></p>
+              </div>
+              <div class="name-date">
+                <div class="inputname">
+                  <p class="recupname"></p>
+                </div>
+                <div class="inputdate">
+                  <p class="recupmonth"></p>
+                  /
+                  <p class="recupyear"></p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="card2">
+          <div class="img-card2">
+            <div class="input-cvc">
+              <h5 class="recupdate"></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

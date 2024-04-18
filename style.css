@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+}
+
+    .container .inactive{
+      display: none;
+    }
+
+    .container .two .active{
+      display: block;
+    }
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper .one {
+  grid-column: 1 / 3;
+  grid-row: 1;
+  background-image: url(image/bg-main-desktop.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left right;
+  width: 100vh;
+  height: 100vh;
+}
+
+.wrapper .two {
+  background-color: hsl(0, 0%, 100%);
+  grid-column: 2 / 4;
+  grid-row: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.container .wrapper .two .form0 {
+  padding: 200px 0;
+  width: 40%;
+  margin: auto;
+  position: relative;
+    overflow: hidden;
+}
+ 
+.container .wrapper .two  .inactive{
+ position: absolute;
+ top: 30px;
+ left: 0;
+ right: 0;
+ text-align: center;
+}
+
+
+.wrapper .two .form0 .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.wrapper .two .form0 .item input,
+.wrapper .two .form0 .cont input {
+  border: 1px solid;
+  border-color: hsl(249, 99%, 64%), hsl(278, 94%, 30%);
+  border-radius: 5px;
+  padding: 5px 8px;
+  outline: none;
+}
+
+.wrapper .two .form0 .cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.wrapper .two .form0 .cont .items1 .date {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.wrapper .two .form0 input[type="submit"] {
+  background-color: #4d004d;
+  color: white;
+  border: none;
+  border-radius: 5px #4d004d;
+  margin-top: 30px;
+  padding: 8px 0;
+  outline: none;
+}
+
+.wrapper .two .form0 .cont .items1 .date input {
+  width: 55px;
+}
+
+.wrapper .two .form0 .cont #cv input {
+  width: 200px;
+}
+
+
+.container .carte .card1 .img-card1 {
+  background-image: url(image/bg-card-front.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 55vh;
+  height: 30vh;
+  position: absolute;
+  top: 100px;
+  left: 250px;
+}
+
+.container .carte .card1 .img-card1 form {
+  padding-top: 100px;
+  padding: 100px 17px 0 10px;
+}
+
+.container .carte .card1 .img-card1 form .inputnumber {
+  padding: 12px 95px;
+  margin-bottom: 50px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+}
+
+
+
+.container .carte .card1 .img-card1 form .inputname,
+.container .carte .card1 .img-card1 form .inputdate{
+  padding: 5px 1px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+}
+
+.container .carte .card1 .img-card1 form .inputdate {
+  text-align: end;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+} 
+
+.container .carte .card1 .img-card1 form .name-date {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container .carte .card2 .img-card2 {
+  background-image: url(image/bg-card-back.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 55vh;
+  height: 30vh;
+  margin: auto;
+  position: absolute;
+  top: 430px;
+  left: 380px;
+}
+
+.container .carte .card2 .img-card2 .input-cvc{
+  padding: 12px 120px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  margin: 105px 0 0 45px;
+  text-align: end;
+}
